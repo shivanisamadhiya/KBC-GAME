@@ -1,4 +1,5 @@
 🎯 KBC-Style Quiz Game
+
 A fully functional, GUI-based Kaun Banega Crorepati (KBC) clone built with Python. This project simulates the thrill of the popular TV game show, featuring a progression-based difficulty system, interactive lifelines, and a polished user interface.
 
 ✨ Key Features
