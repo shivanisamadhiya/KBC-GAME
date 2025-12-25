@@ -1,29 +1,26 @@
-I Created a KBC-Style Quiz Game Using Python! 🎯🎯🎯
+🎯 KBC-Style Quiz Game
+A fully functional, GUI-based Kaun Banega Crorepati (KBC) clone built with Python. This project simulates the thrill of the popular TV game show, featuring a progression-based difficulty system, interactive lifelines, and a polished user interface.
 
-Excited to share one of my recent projects — a fully functional "Kaun Banega Crorepati" (KBC)-style quiz game built using Python!
+✨ Key Features
 
-This game was inspired by the popular Indian television show and includes features such as:
+1.) Interactive GUI: A clean and user-friendly interface built using Tkinter.
+2.) Level-Based Progression: Questions increase in difficulty as the prize money grows, mirroring the real show's format.
+3.) Authentic Lifelines: * 50:50: Eliminates two incorrect options.
+4.) Audience Poll: Simulates weighted random logic to suggest the most likely answer.
+5.) Skip Question: Allows the player to move to the next question without penalty.
+6.) Dynamic Question Bank: Uses a JSON backend for easy management and expansion of questions.
+7.) Visual Feedback: Immediate color-coded feedback for correct and incorrect answers.
 
-Interactive Questions with multiple choice answers
+🛠️ Technologies & Libraries Used
 
-Lifelines (like 50:50, Audience Poll, and Skip Question)
+1.) Python (Core Logic): Used for game state management and Object-Oriented Programming (OOP).
+2.) Tkinter: For building the graphical user interface.
+3.) JSON: To store and retrieve a structured database of questions.
+4.) Random & Time: For shuffling options and creating realistic delays for interactivity.
 
-Level-based Progression with increasing difficulty
-
-Score tracking and visual feedback
-
-Clean and user-friendly GUI built using Tkinter
-
-Modular code structure for easy expansion and maintenance
-
-Technologies & Libraries Used:
-
-Python (Core Logic)
-
-Tkinter (GUI Framework)
-
-Random & Time (for interactivity and logic)
-
-JSON (for question storage)
-
-This project helped me strengthen my Python fundamentals and practice OOP, GUI design, and basic game mechanics. It was also a fun way to simulate real-world applications of programming in entertainment and education.
+📂 Project Structure
+├── main.py              # Entry point to start the game
+├── quiz_logic.py        # Core logic for scoring and lifelines
+├── ui_design.py         # Tkinter layout and styling
+├── questions.json       # Structured question database
+└── assets/              # Icons and images used in the GUI
