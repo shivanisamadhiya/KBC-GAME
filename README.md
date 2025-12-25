@@ -82,7 +82,6 @@ The "Phone-a-Friend" lifeline provides an audio-visual experience where the engi
 
 
 
- 
    for i in range(15):
 
 
@@ -94,9 +93,7 @@ The "Phone-a-Friend" lifeline provides an audio-visual experience where the engi
          engine.say(f'The answer is {correct_answers[i]}')
 
 
-
-
-         
+ 
          engine.runAndWait()
 
 
