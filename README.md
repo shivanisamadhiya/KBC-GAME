@@ -21,14 +21,24 @@ Immediate color-coded feedback for correct and incorrect answers.
 
 # 🛠️ Technologies & Libraries Used
 
-1.) Python (Core Logic): Used for game state management and Object-Oriented Programming (OOP).
-2.) Tkinter: For building the graphical user interface.
-3.) JSON: To store and retrieve a structured database of questions.
-4.) Random & Time: For shuffling options and creating realistic delays for interactivity.
+## 1.) Python (Core Logic):
+Used for game state management and Object-Oriented Programming (OOP).
+## 2.) Tkinter:
+For building the graphical user interface.
+## 3.) JSON: 
+To store and retrieve a structured database of questions.
+## 4.) Random & Time:
+For shuffling options and creating realistic delays for interactivity.
 
 # 📂 Project Structure
-├── main.py              # Entry point to start the game
-├── quiz_logic.py        # Core logic for scoring and lifelines
-├── ui_design.py         # Tkinter layout and styling
-├── questions.json       # Structured question database
-└── assets/              # Icons and images used in the GUI
+
+#### ├── main.py         
+Entry point to start the game
+#### ├── quiz_logic.py     
+Core logic for scoring and lifelines
+#### ├── ui_design.py        
+Tkinter layout and styling
+#### ├── questions.json      
+Structured question database
+#### └── assets/             
+Icons and images used in the GUI
