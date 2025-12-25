@@ -52,14 +52,14 @@ Folder for images (50-50.png, center.png, etc.)
 The lifelines are programmed to be used only once. For example, the 50:50 logic specifically checks the current question in the questionArea and clears the text of two specific incorrect buttons:
 
 
-def lifeline50():
+      def lifeline50():
 
 
-   lifeline50Button.config(image=image50x, state=DISABLED)
+      lifeline50Button.config(image=image50x, state=DISABLED)
 
 
    
-   if questionArea.get(1.0, 'end-1c') == questions[0]:
+      if questionArea.get(1.0, 'end-1c') == questions[0]:
 
 
    
@@ -78,11 +78,11 @@ def lifeline50():
 The "Phone-a-Friend" lifeline provides an audio-visual experience where the engine "speaks" the answer:
 
 
- def phoneclick():
+     def phoneclick():
 
 
 
-   for i in range(15):
+      for i in range(15):
 
 
    
