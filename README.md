@@ -43,9 +43,9 @@ Main Python script containing GUI and Game Logic
 Folder for images (50-50.png, center.png, etc.)
 
 ## 🎮 How to Play
-Clone the Repository
-Install Dependencies
-Run the Script
+##### Clone the Repository
+##### Install Dependencies
+##### Run the Script
 
 ## 🧩 Code Logic Highlights
 #### 1.) The Lifeline System
@@ -53,18 +53,53 @@ The lifelines are programmed to be used only once. For example, the 50:50 logic 
 
 
 def lifeline50():
+
+
    lifeline50Button.config(image=image50x, state=DISABLED)
+
+
+   
    if questionArea.get(1.0, 'end-1c') == questions[0]:
+
+
+   
       optionButton1.config(text='')
+
+
+      
       optionButton4.config(text='')
+
+
+
+
+      
 
 #### 2.) Voice Assistance
 The "Phone-a-Friend" lifeline provides an audio-visual experience where the engine "speaks" the answer:
 
 
  def phoneclick():
+
+
+
+ 
    for i in range(15):
+
+
+   
       if questionArea.get(1.0, 'end-1c') == questions[i]:
+
+
+      
          engine.say(f'The answer is {correct_answers[i]}')
+
+
+
+
+         
          engine.runAndWait()
+
+
+
+         
          
