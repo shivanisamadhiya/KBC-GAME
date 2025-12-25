@@ -4,20 +4,26 @@
 ## ​🚀 Key Features
 ### 1.)​Multimedia Integration:
 * Audio: Uses pygame.mixer for background music and sound effects (calling, winning, losing).
-​i.)Voice Assistant: Uses pyttsx3 (Text-to-Speech) for the "Phone-a-Friend" lifeline.
+##### ​i.)Voice Assistant:
+Uses pyttsx3 (Text-to-Speech) for the "Phone-a-Friend" lifeline.
 ### 2.) ​Three Classic Lifelines:
-i.)​50:50: Dynamically hides two incorrect options based on the current question.
-ii.)​Audience Poll: Displays ttk.Progressbar widgets to simulate crowd voting.
-iii.)​Phone-a-Friend: Triggers a "call" sound and speaks the correct answer using an AI voice.
-iv.)​Dynamic UI: The prize money sidebar (amountLable) updates visually as you progress through 15 levels.
-v.)​Win/Loss Logic: Custom Toplevel windows for game-over scenarios with "Play Again" functionality.
+##### i.)​50:50:
+Dynamically hides two incorrect options based on the current question.
+##### ii.)​Audience Poll:
+Displays ttk.Progressbar widgets to simulate crowd voting.
+##### iii.)​Phone-a-Friend:
+Triggers a "call" sound and speaks the correct answer using an AI voice.
+##### iv.)​Dynamic UI: 
+The prize money sidebar (amountLable) updates visually as you progress through 15 levels.
+##### v.)​Win/Loss Logic: 
+Custom Toplevel windows for game-over scenarios with "Play Again" functionality.
 
 ## ​🛠️ Built With
-i.) ​Python 3.x
-​ii.) Tkinter: For the main GUI and layout.
-iii.) ​Pygame (Mixer): For managing the game's audio environment.
-​iv.) Pyttsx3: For offline Text-to-Speech synthesis.
-​v.) Standard Libraries: random and time for logic and delays.
+##### i.) ​Python 3.x
+##### ​ii.) Tkinter: For the main GUI and layout.
+##### iii.) ​Pygame (Mixer): For managing the game's audio environment.
+##### ​iv.) Pyttsx3: For offline Text-to-Speech synthesis.
+##### ​v.) Standard Libraries: random and time for logic and delays.
 
 ## ​📂 Project Structure
 ​All core logic is contained within the main script for ease of use, supported by local assets:
@@ -44,6 +50,8 @@ Run the Script
 ## 🧩 Code Logic Highlights
 #### 1.) The Lifeline System
 The lifelines are programmed to be used only once. For example, the 50:50 logic specifically checks the current question in the questionArea and clears the text of two specific incorrect buttons:
+
+
 def lifeline50():
    lifeline50Button.config(image=image50x, state=DISABLED)
    if questionArea.get(1.0, 'end-1c') == questions[0]:
@@ -52,7 +60,9 @@ def lifeline50():
 
 #### 2.) Voice Assistance
 The "Phone-a-Friend" lifeline provides an audio-visual experience where the engine "speaks" the answer:
-def phoneclick():
+
+
+ def phoneclick():
    for i in range(15):
       if questionArea.get(1.0, 'end-1c') == questions[i]:
          engine.say(f'The answer is {correct_answers[i]}')
